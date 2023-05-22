@@ -15,9 +15,11 @@ Katherine: IPSec tunnel, Katie: Kerberos Server/Client,
 ### IPSec Tunnel 
 First thing to do is generate a key that both servers will use to secure the tunnel. Here I used openSSL to generate a random 64 bit key that is encoded with base64. 
 
-![Screenshot 2023-05-14 at 3 06 52 PM (2)](https://github.com/katstews/456-proj/assets/112781868/92e247c4-8d61-49ff-b93d-10030cc73158)
-
 This key was then shared between the two systems within their own ipsec.secrets file. In this case the ‘left’ server will be kashew and the ‘right’ server will be ubuntu2. The ip address of kashew is 192.168.64.19 and the ip address of ubuntu2 is 192.168.64.17. 
 
-<img width="735" alt="Screenshot 2023-05-14 at 3 19 54 PM" src="https://github.com/katstews/456-proj/assets/112781868/8b55f591-85c0-48bb-857c-707bda58f0c8">
-<img width="623" alt="Screenshot 2023-05-14 at 3 20 22 PM" src="https://github.com/katstews/456-proj/assets/112781868/c0bb791e-1888-4bcf-8570-453871c7f506">
+This file will encrypt the tunnel to be used by the two vm’s. Next step is to prep the ipsec.conf file so that we can make these two vm’s set an established tunnel. 
+
+So each vm is going to be their own “left” and the “right” will be the other vm they are trying to connect to. It was important to put what key you want to use in the secrets file, as we will be referencing back to it in the conf file, we can see that as “authby” is set to secret. The IKE, which stands for Internet Key Exchange, will negotiate the encryption process it will use to encrypt the messages being sent. ESP will handle how the entire packet will be encrypted and how the new header of the packet will be how the packet is encrypted. 
+
+Now you just need to restart the IPSec configuration and the tunnel will be established between the two vm’s. Below shows the established IPSec tunnel. 
+
