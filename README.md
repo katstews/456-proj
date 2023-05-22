@@ -11,6 +11,12 @@ Katherine: IPSec tunnel, Katie: Kerberos Server/Client,
 
 
 ## how to run code 
+### Certificate Authority and Web Servers 
+### OpenVPN
+### SSH Server
+### PGP Email 
+### DNSSEC Server/Client
+### Kerberos Server
 
 ### IPSec Tunnel 
 First thing to do is generate a key that both servers will use to secure the tunnel. Here I used openSSL to generate a random 64 bit key that is encoded with base64. 
