@@ -7,7 +7,10 @@ Katie Tran,
 Katherine Chen 
 
 ## contribution 
-Katherine: IPSec tunnel, Katie: Kerberos Server/Client, Noah: DNSSEC, SSH 
+Katherine: IPSec tunnel,OpenVPN <br> 
+Katie: Kerberos Server/Client <br> 
+Noah: DNSSEC, SSH <br> 
+Derek: Web Certificate, PGP Email <br>
 
 
 ## how to run code 
