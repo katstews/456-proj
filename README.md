@@ -51,5 +51,21 @@ Next, I modified “named.conf.local” to integrate the DNSSEC keys generated e
 Next, I restarted BIND using the command “sudo systemctl restart bind9” and verified that DNSSEC was functioning correctly using “dig”.
 
 To demonstrate the function of my server using a DNSSEC client, I installed wireshark to capture network traffic and illustrate the function. I applied a “DNS” filter to only capture DNS traffic over the network and performed another dig command to get a response that wireshark could capture.
+
 ### Kerberos Server
+This section of the project involves setting up a Kerberos Server and Client. The goal of setting up a Kerberos server and client is to establish a secure and trusted authentication infrastructure for a network. This allows users and machines in that network to have a centralized authentication service that can allow an organization to achieve several security benefits such as single sign-on, encryption, mutual authentication, and centralized administration.
+
+In my implementation of setting up a Kerberos Server and Client, I made sure to have hostname resolution set up to have the Kerberos server and client machines be able to communicate with each other using hostnames instead of IP addresses. I set up hostname resolution by modifying the /etc/hosts file on both machines to include the IP address and the hostnames of both machines. This can be seen in my screenshot of that file in my Kerberos-server machine. The third line maps the hostname of my Kerberos server, debian.kerberos-server.edu to the IP 192.168.160.145 to ensure that the machine can resolve its hostname to its local network IP address. Meanwhile, the fourth line maps the hostname of the Kerberos client, debian.kerberos-client.edu, to IP 192.168.160.146. I also added these two lines to the /etc/hosts file of my Kerberos-client machine.
+
+Then I installed the Kerberos server and Kerberos Key Distribution Center packages on the Debian machine I wanted to have as my server. After going through the initial set-up I check my configurations
+
+Since I want to ensure administrative privileges will be granted to all principals ending with ‘/admin’, I edit /etc/krb5kdc/kadm5.acl by adding the line  ‘*/admin *.’ 
+  
+After making this configuration, I will add a principal named “kadmin”. Note: this is not an admin user. If I wanted to have the user added as an admin I would add them using “addprinc kadmin/admin” instead of “addprinc kadmin”
+
+On the client machine, I installed Kerberos client and authenticated the user, and obtained a TGT, which serves as proof of the user’s identity and allows them to request service tickets for accessing services protected by Kerberos without requiring repeated password entry. I can view my ticket through the command klist.
+
+Next, I want to verify the details of the kadmin user on the Kerberos server. This ensures that the principal was created successfully and has the intended configurations.
+
+At this point, I have set up a simple Kerberos Server and a Simple Kerberos Client that logs onto the Kerberos server and verified that the user, kadmin was able to login from the client Kerberos successfully.  
 
