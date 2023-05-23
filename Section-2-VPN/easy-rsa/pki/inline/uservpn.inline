@@ -1,0 +1,81 @@
+# client: uservpn
+
+<cert>
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            66:75:19:b5:8c:9f:37:5c:97:65:b0:fd:e1:61:a6:44
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=cn_KwEBz0Ogcz18pqJ0
+        Validity
+            Not Before: May  3 21:18:41 2023 GMT
+            Not After : Aug  5 21:18:41 2025 GMT
+        Subject: CN=uservpn
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:67:f4:02:04:be:c6:4b:62:0f:10:6d:13:c1:6e:
+                    8d:ae:de:06:ee:99:ff:ec:44:6d:02:33:f8:f0:69:
+                    49:9d:95:ac:4a:46:59:d9:5a:54:84:82:38:75:6a:
+                    a6:53:1a:c0:6b:37:53:ec:1b:5e:66:f1:f9:61:a7:
+                    f1:18:d0:c7:0e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                66:99:4E:4C:DF:82:71:96:99:06:EA:C7:78:54:5D:6F:AF:5C:12:C8
+            X509v3 Authority Key Identifier: 
+                keyid:04:68:76:73:5A:48:CC:E4:CB:83:5C:0B:37:5D:CC:11:81:36:C7:08
+                DirName:/CN=cn_KwEBz0Ogcz18pqJ0
+                serial:35:A3:B2:54:60:D2:ED:4D:CA:83:6F:44:4F:CC:B3:6B:59:4A:06:20
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:44:02:20:6e:d2:72:12:79:a3:31:94:2f:3c:f7:07:47:69:
+         f7:e3:1b:da:31:51:6f:39:bd:ed:10:e6:5f:61:67:e1:63:d3:
+         02:20:0b:d6:cb:49:75:f1:e0:63:22:37:3e:64:bf:2e:1e:05:
+         a2:99:8f:cf:13:78:53:fe:cd:c9:6a:56:80:4b:f6:49
+-----BEGIN CERTIFICATE-----
+MIIB2DCCAX+gAwIBAgIQZnUZtYyfN1yXZbD94WGmRDAKBggqhkjOPQQDAjAeMRww
+GgYDVQQDDBNjbl9Ld0VCejBPZ2N6MThwcUowMB4XDTIzMDUwMzIxMTg0MVoXDTI1
+MDgwNTIxMTg0MVowEjEQMA4GA1UEAwwHdXNlcnZwbjBZMBMGByqGSM49AgEGCCqG
+SM49AwEHA0IABGf0AgS+xktiDxBtE8Fuja7eBu6Z/+xEbQIz+PBpSZ2VrEpGWdla
+VISCOHVqplMawGs3U+wbXmbx+WGn8RjQxw6jgaowgacwCQYDVR0TBAIwADAdBgNV
+HQ4EFgQUZplOTN+CcZaZBurHeFRdb69cEsgwWQYDVR0jBFIwUIAUBGh2c1pIzOTL
+g1wLN13MEYE2xwihIqQgMB4xHDAaBgNVBAMME2NuX0t3RUJ6ME9nY3oxOHBxSjCC
+FDWjslRg0u1NyoNvRE/Ms2tZSgYgMBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1Ud
+DwQEAwIHgDAKBggqhkjOPQQDAgNHADBEAiBu0nISeaMxlC889wdHaffjG9oxUW85
+ve0Q5l9hZ+Fj0wIgC9bLSXXx4GMiNz5kvy4eBaKZj88TeFP+zclqVoBL9kk=
+-----END CERTIFICATE-----
+</cert>
+
+<key>
+-----BEGIN PRIVATE KEY-----
+MIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQg7W9k6vs7zM6SD0Ss
+cKNHrDe5yqI87bUvwXXw/rQ028ahRANCAARn9AIEvsZLYg8QbRPBbo2u3gbumf/s
+RG0CM/jwaUmdlaxKRlnZWlSEgjh1aqZTGsBrN1PsG15m8flhp/EY0McO
+-----END PRIVATE KEY-----
+</key>
+
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIB2DCCAX2gAwIBAgIUNaOyVGDS7U3Kg29ET8yza1lKBiAwCgYIKoZIzj0EAwIw
+HjEcMBoGA1UEAwwTY25fS3dFQnowT2djejE4cHFKMDAeFw0yMzA1MDMyMTE4MjRa
+Fw0zMzA0MzAyMTE4MjRaMB4xHDAaBgNVBAMME2NuX0t3RUJ6ME9nY3oxOHBxSjAw
+WTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASnAEjqehOmKYduNciUAo7Mg/qQL3Cw
+O+BX8IHqiZ2LFNhyw0Yy6iEHGRvPBM6OP4eRwFTLUH12cN8xCxIhFdwKo4GYMIGV
+MAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFARodnNaSMzky4NcCzddzBGBNscIMFkG
+A1UdIwRSMFCAFARodnNaSMzky4NcCzddzBGBNscIoSKkIDAeMRwwGgYDVQQDDBNj
+bl9Ld0VCejBPZ2N6MThwcUowghQ1o7JUYNLtTcqDb0RPzLNrWUoGIDALBgNVHQ8E
+BAMCAQYwCgYIKoZIzj0EAwIDSQAwRgIhAJMGewcjq6W/Tfb6qYlMxreKHU1cWskd
+aQp535uheZTFAiEAseCwKXHutfyXl69d9fbVt3S3jMi3GEpXo3z+Tu8IJK0=
+-----END CERTIFICATE-----
+</ca>
+
