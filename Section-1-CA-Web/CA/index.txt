@@ -1,0 +1,6 @@
+R	280509010203Z	230512010821Z	1000	unknown	/CN=fourfiftytwo.local/ST=CA/C=US/emailAddress=admin@fourfiftytwo.local/O=Four Fifty Two/OU=Four Fifty Two Apache
+V	280509010316Z		1001	unknown	/CN=fourfiftytwo.local/ST=CA/C=US/emailAddress=admin@fourfiftytwo.local/O=Four Fifty Two/OU=Four Fifty Two IIS
+V	280509010334Z		1002	unknown	/CN=fourfiftytwo.local/ST=CA/C=US/emailAddress=admin@fourfiftytwo.local/O=Four Fifty Two/OU=Four Fifty Two Node
+R	280510010831Z	230522223129Z	1003	unknown	/CN=fourfiftytwo.local/ST=CA/C=US/emailAddress=admin@fourfiftytwo.local/O=Four Fifty Two/OU=Four Fifty Two Apache
+V	280520232715Z		1004	unknown	/CN=452 Certificates/ST=CA/C=US/emailAddress=452project@csu.fullerton.edu/O=California State University Fullerton/OU=CPSC 452
+V	280520235457Z		1005	unknown	/CN=fourfiftytwo.local/ST=CA/C=US/emailAddress=admin@fourfiftytwo.local/O=Four Fifty Two/OU=Four Fifty Two Apache
